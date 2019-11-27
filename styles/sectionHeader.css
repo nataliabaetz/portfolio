@@ -1,0 +1,38 @@
+
+.sectionHeader {
+  background-color: #595656;
+}
+.sectionHeader .flexWrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 915px;
+  height: 649px;
+  margin: 0 auto;
+}
+.sectionHeader h2 {
+  font-family: Fira Sans;
+  font-weight: 800;
+  font-size: 42px;
+  padding-right: 30px;
+}
+
+.sectionHeader h6 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 36px;
+  color: white;
+}
+.sectionHeader .flexWrapper div {
+  color: #FF8F1C;
+  flex-basis: 50%;
+}
+.sectionHeader p {
+  color: white;
+  flex-basis: 50%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 153.9%;
+}

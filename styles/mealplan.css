@@ -1,0 +1,189 @@
+#hero {
+  flex-direction: row;
+  background-image: url('../images/mealplan_herobg.jpg');
+  background-size: cover;
+  display: flex;
+}
+
+#hero>div {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  justify-content: center; 
+}
+
+#overview {
+  padding: 90px;
+}
+#overview>p {
+  text-align: center;
+  max-width: 1024px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 167.23%;
+  color: #252323;
+}
+#overview>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 915px;
+  margin-top: 95px;
+
+}
+#overview article {
+  text-align: center;
+}
+
+#overview h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 137.9%;
+  color: black;
+}
+
+#overview h3:after {
+  content:'';
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 33px;
+  width: 86px;
+  height: 3px;
+  background-color: black;
+}
+
+#overview h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500
+}
+
+
+#overview li {
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#solving-the-problem {
+  padding: 90px;
+  text-align: center;
+}
+#solving-the-problem article {
+  text-align: center;
+}
+#solving-the-problem h4 {
+  font-family: Gothic A1;
+  font-weight: 200;
+  font-size: 42px;
+  color: #252323;
+}
+
+
+#solving-the-problem .key-features {
+  max-width: 915px;
+  margin: 30px auto 0;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+#solving-the-problem h5 {
+  font-size: 20px;
+  color: #20AB93;
+}
+
+#solving-the-problem li {
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+#solving-the-problem li:before {
+  content: '+';
+  margin-right: 15px;
+}
+
+#survey-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+#survey-results li {
+  flex-basis: .5;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 102px 0;
+}
+
+#survey-results li span:first-child {
+  font-weight: normal;
+  font-size: 72px;
+  color: #252323;
+  flex-basis: 1;
+  margin-right: 36px;
+}
+
+#survey-results li span:last-child {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 137.9%;
+  color: #252323;
+  white-space: wrap;
+  text-align: left;
+  flex-basis: 2;
+}
+
+#personas {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-around;
+  max-width: 915px;
+  margin: 90px auto;
+}
+
+#personas li {
+  width: 350px;
+  padding: 0 60px;
+  text-align: center;
+  flex-basis: 1000;
+
+}
+
+#personas li:nth-child(2) {
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#personas h5 {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
+
+#personas span {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+#personas span:last-child {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0C0B0B;
+  margin-top: 30px;
+}

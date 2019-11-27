@@ -1,0 +1,12 @@
+footer {
+  height: 114px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 84px;
+  align-items: center;
+}
+footer section {
+  width: 184px;
+  display: flex;
+  justify-content: space-between;
+}

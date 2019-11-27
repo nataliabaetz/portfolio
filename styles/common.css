@@ -1,0 +1,51 @@
+body {
+  font-family: Gothic A1;
+  background-image: url('../images/macbook.png');
+}
+
+button { 
+  height: 48px;
+  align-items: center;
+  text-align: center;
+  background: #20AB93;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-family: Gothic A1;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  -webkit-filter: brightness(70%);
+}
+
+button a {
+  line-height: 48px;
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.subHeader h3 {
+  font-family: Fira Sans;
+  font-weight: 800;
+  font-size: 42px;
+  color: #20AB93;
+  margin-top: 49px;
+  text-align: center;
+}
+
+.subHeader p {
+  margin: 0 auto;
+  margin-top: 23px;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 137.9%;
+  color: #252323;
+  max-width: 915px;
+  text-align: center;
+  display: block;
+}

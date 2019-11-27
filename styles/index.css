@@ -1,0 +1,79 @@
+main section#hero {
+  height: 694px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section#hero div {
+  width: 957px;
+}
+
+main section#hero h2 {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+main section#hero p {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 159.19%;
+}
+main section#hero a {
+  position: absolute;
+  bottom: 15px;
+}
+
+
+.caseStudy {
+  height: 783px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:  rgba(94, 94, 94, 0.37);
+  background-image: url('../images/CaseStudyBackground.png')
+}
+
+.caseStudy h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 45px;  
+}
+
+.caseStudy button {
+
+}
+
+.caseStudy#mealPlan {
+    background-image: url('../images/MealPlanCaseStudyBackground.jpg');
+}
+
+#contactMe {
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  display: block;
+  height: 387px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#contactMe a {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 52px;
+  color: #252323;
+}

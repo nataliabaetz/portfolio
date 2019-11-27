@@ -4,122 +4,122 @@
   <head>
     <title>Portfolio | Natalia Baetz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src='scripts/importer.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/common.css">
+  <link rel="stylesheet" type="text/css" href="styles/mealplan.css">
+
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,300,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <section>
-          <a href=''>
-           <img src='images/personal-logo-name.png' alt='logo'/>
-          </a> 
-        </section>
-        <ul>
-          <li><a href='/'>Home</a></li>
-          <li><a href='#projects'>Work</a></li>
-          <li><a href=''>About</a></li>
-          <li><a href=''>Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header></header>
     <main>
-      <section>
-        <img src='images/IphoneDisplay.png' alt='Sample phone app' />
-        <img src='images/Logo-slogan.png' alt='Meal Plan: Meals at Home Made Easy' />
-        <button>
-          <a href=''>
-            See Mockup
-          </a>
-        </button>
+      <section id='hero'>
+        <img src='images/IphoneDisplay.png' width='412px' height='610px' alt='Sample phone app' />
+        <div>
+          <img src='images/Logo-slogan.png' alt='Meal Plan: Meals at Home Made Easy' />
+          <button>
+            <a href=''>
+              See Mockup
+            </a>
+          </button>
+        </div>
       </section>
-      <section>
+      <section id='overview'>
         <p>
           Meal Plan is an application tool where users can find, save, upload, share recipes, and easily create a meal plan and grocery list for the week.
         </p>
-        <article>
-          <h3>Design Role</h3>
-          <ul>
-            <li>UX design</li>
-            <li>Visual design</li>
-            <li>Brand & identity</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Deliverables</h3>
-          <ul>
-            <li>User survey</li>
-            <li>Personas</li>
-            <li>Competitve analysis</li>
-            <li>User storeis & flows</li>
-            <li>Paper prototype</li>
-            <li>Wire-frames</li>
-            <li>User testing</li>
-            <li>Visual design</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Specifications</h3>
-          <ul>
-            <li>
-              <h3>Focus</h3>
-              <span>iOS native app</span>
-            </li>
-            <li>
-              <h3>Duration</h3>
-              <span>8 Weeks</span>
-            </li>
-            <li>
-              <h3>Tools & Software</h3>
-              <ul>
-                <li>Figma</li>
-                <li>Draw.io</li>
-              </ul>
-            </li>
-          </ul>
-        </article>
+        <div>
+          <article>
+            <h3>Design Role</h3>
+            <ul>
+              <li>UX design</li>
+              <li>Visual design</li>
+              <li>Brand & identity</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Deliverables</h3>
+            <ul>
+              <li>User survey</li>
+              <li>Personas</li>
+              <li>Competitve analysis</li>
+              <li>User storeis & flows</li>
+              <li>Paper prototype</li>
+              <li>Wire-frames</li>
+              <li>User testing</li>
+              <li>Visual design</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Specifications</h3>
+            <ul>
+              <li>
+                <h4>Focus</h4>
+                <span>iOS native app</span>
+              </li>
+              <li>
+                <h4>Duration</h4>
+                <span>8 Weeks</span>
+              </li>
+              <li>
+                <h4>Tools & Software</h4>
+                <ul>
+                  <li>Figma</li>
+                  <li>Draw.io</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
-      <section>
-        <h2>Why Meal Plan?</h2>
-        <h6>(the problem)</h6>
-        <p>
-          As a typical household member, I found myself really struggling between finding my favorite recipes, coordinating with my partner in planning the weekly meals, putting together a grocery list and finally doing the grocery shopping. This daunting and time-consuming process oftentimes leads us to eat out more often than we want to and not sticking to the healthy diet we strive for.  Soon I learned that just like me, other people have similar struggles as well. 
-        </p>
+      <section 
+        class='sectionHeader'
+        data-title='Why Meal Plan?'
+        data-subtitle='(the problem)' data-description='As a typical household member, I found myself really struggling between finding my favorite recipes, coordinating with my partner in planning the weekly meals, putting together a grocery list and finally doing the grocery shopping. This daunting and time-consuming process oftentimes leads us to eat out more often than we want to and not sticking to the healthy diet we strive for.  Soon I learned that just like me, other people have similar struggles as well. '>
       </section>
-      <section>
+      <section id='solving-the-problem'>
         <h4>Solving the problem</h4>
         <article>
-          <h3>App Features</h3>
-          <p>
-            In the time working on this project, I decided to focus on the key features, however, the app is set up to do more as it progresses. 
-          </p>
+          <div 
+            class='subHeader' 
+            data-title='App Features'
+            data-description='In the time working on this project, I decided to focus on the key features, however, the app is set up to do more as it progresses.'
+          />
         </article>
-        <article>
-          <h5>Key Features</h5>
-          <ul>
-            <li>Customizable recipe search</li>
-            <li>Daily meal planner</li>
-            <li>Easy grocery list generator</li>
-            <li>Customizable recipe collections</li>
-            <li>Community notes platform</li>
-            <li>Option for grocery delivery</li>
-            <li>hashtag commands</li>
-          </ul>
-          <img src='images/iphone-mealplan-explore.png' alt='iphone app sample' />
+        <article class='key-features'>
+          <div>
+            <h5>Key Features</h5>
+            <ul>
+              <li>Customizable recipe search</li>
+              <li>Daily meal planner</li>
+              <li>Easy grocery list generator</li>
+              <li>Customizable recipe collections</li>
+              <li>Community notes platform</li>
+              <li>Option for grocery delivery</li>
+              <li>hashtag commands</li>
+            </ul>
+          </div>
+          <img height='586px' src='images/iphone-mealplan-explore.png' alt='iphone app sample' />
         </article>
       </section>
-      <section>
-        <h2>Gaining understanding</h2>
-        <h6>(Ux Research)</h6>
-        <p>
-          Building a Meal Plan app just for my needs is good enough of an excuse however, I needed to make sure this project would be also helpful to many other users.  In order to design a product that would help many users, I performed an extensive user experience research. 
-        </p>
+      <section 
+        class='sectionHeader' 
+        data-title='Gaining understanding' data-subtitle='(Ux Research)' data-description='Building a Meal Plan app just for my needs is good enough of an excuse however, I needed to make sure this project would be also helpful to many other users.  In order to design a product that would help many users, I performed an extensive user experience research.'>
       </section>
       <section>
          <article>
-          <h3>Surveys</h3>
-          <p>
-            I conducted a survery to learn abou the dynamics of grocery shopping and meal making and planning.  Here is what I learned:
-          </p>
-          <ul>
+          <div 
+            class='subHeader' 
+            data-title='Surveys'
+            data-description='I conducted a survery to learn abou the dynamics of grocery shopping and meal making and planning.  Here is what I learned:'>
+          </div>
+          <ul id='survey-results'>
             <li>
               <span>83%</span>
               <span>Respondents plan ahead before going grocery shopping</span>
@@ -139,11 +139,12 @@
           </ul>
         </article>
         <article>
-          <h3>Personas</h3>
-          <p>
-            To gain a deeper understanding of my users, I chatted with 3 participants from various backgrounds.  This gave me perspective about their motivations and frustrations  
-          </p>
-          <ul>
+          <div 
+            class='subHeader' 
+            data-title='Personas'
+            data-description='To gain a deeper understanding of my users, I chatted with 3 participants from various backgrounds.  This gave me perspective about their motivations and frustrations  '/>
+          </div>
+          <ul id='personas'>
             <li>
               <img src='images/Persona1.png' alt='Susan'/>
               <h5>Susan</h5>
@@ -167,63 +168,61 @@
             </li>
           </ul>
         </article>
-        <section>
-          <h2>What the others are doing</h2>
-          <h6>(competitive analysis)</h6>
-          <p>
-            Recipe apps are not a new thing, in fact, there are many applications out there that would offer a combination of features.  From my research, I picked two strongest competitors, Yummily and Mealime. and performed a SWOT.  I learned that both apps have great strengths, however, I could see a lot of potential for Meal Plan.
-          </p>
+        <section 
+          class='sectionHeader' 
+          data-title='What Others Are Doing' data-subtitle='(competitive analysis)' data-description='Recipe apps are not a new thing, in fact, there are many applications out there that would offer a combination of features.  From my research, I picked two strongest competitors, Yummily and Mealime. and performed a SWOT.  I learned that both apps have great strengths, however, I could see a lot of potential for Meal Plan.'>
         </section>
         <article>
           <img src='images/mealime-logo.png' alt='mealime' />
           <section>
-            <h3>S</h3>
+            <h3 class='greenHeader'>S</h3>
             <span>Shows a list of cookware needed for the recipe</span>
             <span>Has options for nutrition tracking</span>
           </section>
           <section>
-            <h3>W</h3>
+            <h3 class='greenHeader'>W</h3>
             <span>Can save recipes other than favorites and temporarly meal plan</span>
             <span>Can't tag or group recipes based on category</span>
           </section>
           <section>
-            <h3>O</h3>
+            <h3 class='greenHeader'>O</h3>
             <span>Ability to organize the meal plan based on day and type of meal</span>
             <span>Ability to add your own recipes</span>
           </section>
           <section>
-            <h3>T</h3>
+            <h3 class='greenHeader'>T</h3>
             <span>People have their own recipes or find recipes on the web and want to integrate those on their meal plan</span>
           </section>
         </article>
         <article>
           <img src='images/yum-logo.png' alt='yummly' />
           <section>
-            <h3>S</h3>
+            <h3 class='greenHeader'>S</h3>
             <span>Can scan ingredients and find recipes with those ingredients</span>
             <span>Has a comprehensive filter for recipe searching</span>
           </section>
           <section>
-            <h3>W</h3>
+            <h3 class='greenHeader'>W</h3>
             <span>Can't easy access or edit a meal plan</span>
             <span>Can't collaborate with others</span>
           </section>
           <section>
-            <h3>O</h3>
+            <h3 class='greenHeader'>O</h3>
             <span>Have an integrated easy to access and edit meal plan</span>
             <span>Ability to collaborate with others</span>
           </section>
           <section>
-            <h3>T</h3>
+            <h3 class='greenHeader'>T</h3>
             <span>People needing a planing tool</span>
           </section>
         </article>
       </section>
       <section>
-        <h3>Branding & identity</h3>
-        <p>
-          To find Meal Plan's identity, I first jot down the feelings Meal Plan wanted to evoke.
-        </p>
+        <div 
+          class='subHeader' 
+          data-title='Branding & identity'
+          data-description="To find Meal Plan's identity, I first jot down the feelings Meal Plan wanted to evoke."/>
+        </div>
         <ul>
           <li>warmth</li>
           <li>homey</li>
@@ -247,16 +246,18 @@
       <section>
         <h4>Information Architecture..</h4>
         <article>
-          <h5>User Stories, Content Strategy & User Flow</h5>
-          <p>
-            With the new information from my research findings, I was able to move forward onto the information architecture phase.
-          </p>
+          <div 
+            class='subHeader' 
+            data-title='User Stories, Content Strategy & User Flow'
+            data-description="With the new information from my research findings, I was able to move forward onto the information architecture phase."/>
+          </div>
         </article>
         <article>
-          <h5>User Stories</h5>
-          <p>
-            By doing user stories, I was able to prioritize the features I should first work on Meal Plan.  Since I gather a lot of great ideas for features I could incorporate in Meal Plan, prioritizing on the MVP, helped me focus.
-          </p>
+          <div 
+            class='subHeader' 
+            data-title='User Stories'
+            data-description="By doing user stories, I was able to prioritize the features I should first work on Meal Plan.  Since I gather a lot of great ideas for features I could incorporate in Meal Plan, prioritizing on the MVP, helped me focus."/>
+          </div>
           <section>
             <section>
               <h6>High</h6>
@@ -283,17 +284,19 @@
           </section>
         </article>
         <article>
-          <h5>Content Strategy</h5>
-          <p>
-            I created a digital route-map to layout the content.  This helped me organize the MVP 
-          </p>
+          <div 
+            class='subHeader' 
+            data-title='Content Strategy'
+            data-description="I created a digital route-map to layout the content.  This helped me organize the MVP "/>
+          </div>
           <img src='images/content-stragery.png' alt='content strategy roadmap'/>
         </article>
         <article>
-          <h5>User Flow</h5>
-          <p>
-            I created user flows to help me organize the process an certain tasks,
-          </p>
+          <div 
+            class='subHeader' 
+            data-title='User Flow'
+            data-description="I created user flows to help me organize the process an certain tasks,"/>
+          </div>
           <img src='images/user_flow_app.png' alt='user flow diagram'/>
           <button>See User Flows</button>
         </article>
@@ -307,18 +310,18 @@
         <p>The idea here was to put togeher my desing on a timely manner so i could then test it and refind the desing</p>
         <button>See Wire-frames</button>
       </section>
-      <section>
-        <h2>Testing, Testing, Testing!</h2>
-        <h6>(portotype & preference testing)</h6>
-        <p>
-          I ran prototype, mockup and preference testing to gain users’ perspective.  The feedback I got from the participants really help me shape this app mockup, and gave me great ideas for future features.
-        </p>
+      <section 
+        class='sectionHeader'
+        data-title='Testing, Testing, Testing!'
+        data-subtitle='(portotype & preference testing)' 
+        data-description='I ran prototype, mockup and preference testing to gain users’ perspective.  The feedback I got from the participants really help me shape this app mockup, and gave me great ideas for future features.'>
       </section>
       <article>
-        <h5>Prototype/Mockup Testing</h5>
-        <p>
-          I conducted  prototype/mockup testing which allowed me to find issues I needed to resolve to make this app more user-friendly
-        </p>
+        <div 
+          class='subHeader' 
+          data-title='Prototype/Mockup Testing'
+          data-description="I conducted  prototype/mockup testing which allowed me to find issues I needed to resolve to make this app more user-friendly"/>
+        </div>
         <img src='images/mockup_prototype-testing.png' alt='mockup prototypes'/>
       </article>
       <section>
@@ -347,10 +350,11 @@
         </article>
       </section>
       <article>
-        <h5>Preference Testing</h5>
-        <p>
-          Preference testing helped me decide between some visual design options.  Using User Hub, I have the participants choose their favorite desing 
-        </p>
+        <div 
+          class='subHeader' 
+          data-title='Preference Testing'
+          data-description="Preference testing helped me decide between some visual design options.  Using User Hub, I have the participants choose their favorite desing "/>
+        </div>
         <img src='images/iphone-opt1.png' alt='chosen design'/>
           <h4>Vs</h4>
         <img src='images/iphone-opt2.png' alt='compration design'/>
@@ -367,25 +371,13 @@
         <button>Review Case Study</button>
       </section>
       <article>
-        <h5>Conclusion</h5>
-        <p>
-          Meal Plan was a fun project to work on.  This mockup project covers the basic features, however, this app is designed to grow to include a lot more helpful tools.  Along the process, I learned a lot about how to design a project from identifying a problem to design.  The biggest take away would be the importance of testing; It’s essential to include the perspective from the users, so this app can work for everyone.
-        </p>
+        <div 
+          class='subHeader' 
+          data-title='Conclusion'
+          data-description="Meal Plan was a fun project to work on.  This mockup project covers the basic features, however, this app is designed to grow to include a lot more helpful tools.  Along the process, I learned a lot about how to design a project from identifying a problem to design.  The biggest take away would be the importance of testing; It’s essential to include the perspective from the users, so this app can work for everyone."/>
+        </div>
       </article>
     </main>
-    <footer>
-      <a href=''>
-        <img src='images/social-red-logo-github.png' alt='github' />
-      </a>
-      <a href=''>
-        <img src='images/social-red-round-linkedin.png' alt='linkedin' />
-      </a>
-      <a href=''>
-        <img src='images/social-red-round-twitter.png' alt='twitter' />
-      </a>
-      <span>
-        Designed and developed by Natalia Baetz.  Copyright © 2019
-      </span>
-    </footer>
+    <footer></footer>
   </body>
 </html>

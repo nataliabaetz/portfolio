@@ -1,0 +1,31 @@
+header nav {
+  height: 82px;
+  padding: 0 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav#headerContents ul li {
+  width: 109px;
+  display: inline-block;
+  text-align: center;
+}
+
+header nav#headerContents ul li a {
+  color: #20AB93;
+  font-family: Gothic A1;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header nav#headerContents ul li a:hover {
+  -webkit-filter: brightness(70%);
+}

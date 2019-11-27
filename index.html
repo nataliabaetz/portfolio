@@ -4,66 +4,41 @@
   <head>
     <title>Portfolio | Natalia Baetz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src='scripts/importer.js'></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/common.css">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <section>
-          <a href=''>
-            <img src='images/personal-logo-name.png' alt='logo'/>
-          </a> 
-        </section>
-        <ul>
-          <li><a href='/'>Home</a></li>
-          <li><a href='#projects'>Work</a></li>
-          <li><a href=''>About</a></li>
-          <li><a href=''>Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header></header>
     <main>
-      <section>
-        <h2>Hello!</h2>
-        <p>
-          My name is <strong>Natalia Baetz</strong>.  I'm a digital <strong>product designer</strong> based in San Fransico, and I'm passionate about <strong>making</strong> the world a <strong>better place</strong> through my work.
-        </p>
+      <section id='hero'>
+        <div>
+          <h2>Hello!</h2>
+          <p>
+            My name is <strong>Natalia Baetz</strong>.  I'm a digital <strong>product designer</strong> based in San Fransico, and I'm passionate about <strong>making</strong> the world a <strong>better place</strong> through my work.
+          </p>
+        </div>
         <a href='#projects'>
           <img src='images/arrow_down.png' alt='down arrow'/>
         </a>
       </section>
       <section id='projects'>
         <ul>
-          <li>
-            <h1>Meal Plan</h1>
-            <button>
-              <a href='project.html'>
-                Review Case Study
-              </a>
-            </button>
-          </li>
-          <li>
-            <h1>Case Study Name</h1>
-            <button>Review Case Study</button>
-          </li>
+          <li id='mealPlan' class='caseStudy' data-name='Meal Plan' data-link='project.html'></li>
+          <li id='generic' class='caseStudy' data-name='Case Study Name' data-link='project.html'></li>
         </ul>
       </section>
-      <section>
+      <section id='contactMe'>
         Let's chat <a href=''>Contact me!</a>
       </section>
     </main>
-    <footer>
-      <a href=''>
-        <img src='images/social-red-logo-github.png' alt='github' />
-      </a>
-      <a href=''>
-        <img src='images/social-red-round-linkedin.png' alt='linkedin' />
-      </a>
-      <a href=''>
-        <img src='images/social-red-round-twitter.png' alt='twitter' />
-      </a>
-      <span>
-        Designed and developed by Natalia Baetz.  Copyright © 2019
-      </span>
-    </footer>
+    <footer></footer>
   </body>
 </html>
