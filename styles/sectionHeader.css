@@ -29,7 +29,7 @@
   color: #FF8F1C;
   flex-basis: 50%;
 }
-.sectionHeader p {
+.sectionHeader .sectionP {
   color: white;
   flex-basis: 50%;
   font-weight: 300;

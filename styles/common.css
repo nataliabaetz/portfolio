@@ -1,6 +1,7 @@
 body {
   font-family: Gothic A1;
   background-image: url('../images/macbook.png');
+  background-size: cover;
 }
 
 button { 
