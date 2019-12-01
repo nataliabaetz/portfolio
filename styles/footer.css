@@ -4,9 +4,28 @@ footer {
   justify-content: space-between;
   padding: 0 84px;
   align-items: center;
+  position: relative;
+}
+
+footer:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(360deg, #FFFFFF 62.06%, rgba(225, 225, 225, 0.18) 136.13%);
+filter: blur(8px);
 }
 footer section {
   width: 184px;
   display: flex;
   justify-content: space-between;
+}
+
+footer span {
+  color: #414141;
+  font-weight: 300;
+  font-size: 14px;
 }
