@@ -1,8 +1,18 @@
 /* Common Styles */
 body {
-  background-image: url('images/macbook.png');
-  background-size: cover;
   font-family: Gothic A1;
+  position: relative;
+}
+
+body:after {
+  content: '';
+  background-image: url('images/macbook.jpg');
+  background-size: auto 100%;
+  opacity: .5;
+  filter: blur(8px);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
 }
 button {
   align-items: center;
@@ -906,6 +916,7 @@ footer span {
 .gray_box_lists section {
   background-color: #F0F0F0;
   flex-grow: 0;
+  margin: 0 15px;
   max-width: 350px;
   padding: 50px;
 }
