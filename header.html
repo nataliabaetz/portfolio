@@ -1,4 +1,13 @@
-<link rel="stylesheet" type="text/css" href="styles/header.css">
+<script type='text/javascript'>
+  $(window).click(() => {
+    $('#headerContents').removeClass('expanded')
+  });
+
+  $('#headerContents .fa-bars').click((event) => {
+    event.stopPropagation()
+    $('#headerContents').toggleClass('expanded')
+  });
+</script>
 <nav id='headerContents'>
   <section>
     <a href=''>
@@ -11,4 +20,5 @@
     <li><a href=''>About</a></li>
     <li><a href=''>Contact</a></li>
   </ul>
+  <i class="fa fa-bars"></i>
 </nav>

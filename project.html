@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Portfolio | Natalia Baetz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src='scripts/importer.js'></script>
+    <link rel='stylesheet' type='text/css' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/common.css">
-  <link rel="stylesheet" type="text/css" href="styles/mealplan.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,900&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,300,500,700,900&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
   </head>
   <body>
     <header></header>
-    <main>
+    <main id='mealplan'>
       <section id='hero'>
         <!--<img src='images/IphoneDisplay.png' width='412px' height='610px' alt='Sample phone app' />
         <div>
@@ -87,7 +86,7 @@
       <section 
         class='sectionHeader'
         data-title='Why Meal Plan?'
-        data-subtitle='(the problem)' data-description='As a typical household member, I found myself really struggling between finding my favorite recipes, coordinating with my partner in planning the weekly meals, putting together a grocery list and finally doing the grocery shopping. This daunting and time-consuming process oftentimes leads us to eat out more often than we want to and not sticking to the healthy diet we strive for.  Soon I learned that just like me, other people have similar struggles as well. '>
+        data-subtitle='(The Problem)' data-description='As a typical household member, I found myself really struggling between finding my favorite recipes, coordinating with my partner in planning the weekly meals, putting together a grocery list and finally doing the grocery shopping. This daunting and time-consuming process oftentimes leads us to eat out more often than we want to and not sticking to the healthy diet we strive for.  Soon I learned that just like me, other people have similar struggles as well. '>
       </section>
       <section id='solving-the-problem'>
         <h4>Solving the problem</h4>
@@ -116,14 +115,17 @@
       </section>
       <section 
         class='sectionHeader' 
-        data-title='Gaining understanding' data-subtitle='(Ux Research)' data-description='Building a Meal Plan app just for my needs is good enough of an excuse however, I needed to make sure this project would be also helpful to many other users.  In order to design a product that would help many users, I performed an extensive user experience research.'>
+        data-title='Gaining understanding' data-subtitle='(Ux Research)' data-description='Building a Meal Plan app just for my needs is good enough of an excuse however, I needed to make sure this project would be also helpful to many other users.
+        In order to design a product that would help many users, I performed an extensive user experience research.'>
       </section>
       <section>
          <article>
           <div 
             class='subHeader' 
             data-title='Surveys'
-            data-description='I conducted a survery to learn abou the dynamics of grocery shopping and meal making and planning.  Here is what I learned:'>
+            data-description='I conducted a survery to learn about the dynamics of grocery shopping and meal making and planning.
+
+Here is what I learned:'>
           </div>
           <ul id='survey-results'>
             <li>
@@ -154,7 +156,7 @@
             <li>
               <img src='images/Persona1.png' alt='Susan'/>
               <h5>Susan</h5>
-              <span>Pharmasist</span>
+              <span class='block'>Pharmasist</span>
               <span>Age: 35 / Loation: San Francisco, CA / Gender: Female</span>
               <span>"I want a place where I can save and organize all my favorite recipes"</span>
             </li>
@@ -179,50 +181,66 @@
           data-title='What Others Are Doing' data-subtitle='(competitive analysis)' data-description='Recipe apps are not a new thing, in fact, there are many applications out there that would offer a combination of features.  From my research, I picked two strongest competitors, Yummily and Mealime. and performed a SWOT.  I learned that both apps have great strengths, however, I could see a lot of potential for Meal Plan.'>
         </section>
         <article class='competitor'>
-          <img src='images/mealime-logo.png' alt='mealime' />
+          <img src='images/mealime-logo.png' id='mealime_logo' alt='mealime' />
           <div>
             <section>
               <h3 class='swot-header'>S</h3>
-              <span>Shows a list of cookware needed for the recipe</span>
-              <span>Has options for nutrition tracking</span>
+              <div>
+                <span>Shows a list of cookware needed for the recipe</span>
+                <span>Has options for nutrition tracking</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>W</h3>
-              <span>Can save recipes other than favorites and temporarly meal plan</span>
-              <span>Can't tag or group recipes based on category</span>
+              <div>
+                <span>Can save recipes other than favorites and temporarly meal plan</span>
+                <span>Can't tag or group recipes based on category</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>O</h3>
-              <span>Ability to organize the meal plan based on day and type of meal</span>
-              <span>Ability to add your own recipes</span>
+              <div>
+                <span>Ability to organize the meal plan based on day and type of meal</span>
+                <span>Ability to add your own recipes</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>T</h3>
-              <span>People have their own recipes or find recipes on the web and want to integrate those on their meal plan</span>
+              <div>
+                <span>People have their own recipes or find recipes on the web and want to integrate those on their meal plan</span>
+              </div>
             </section>
           </div>
         </article>
         <article class='competitor'>
-          <img src='images/yum-logo.png' alt='yummly' />
+          <img src='images/yum-logo.png' alt='yummly' id='yum_logo'  />
           <div>
             <section>
               <h3 class='swot-header'>S</h3>
-              <span>Can scan ingredients and find recipes with those ingredients</span>
-              <span>Has a comprehensive filter for recipe searching</span>
+              <div>
+                <span>Can scan ingredients and find recipes with those ingredients</span>
+                <span>Has a comprehensive filter for recipe searching</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>W</h3>
-              <span>Can't easy access or edit a meal plan</span>
-              <span>Can't collaborate with others</span>
+              <div>
+                <span>Can't easy access or edit a meal plan</span>
+                <span>Can't collaborate with others</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>O</h3>
-              <span>Have an integrated easy to access and edit meal plan</span>
-              <span>Ability to collaborate with others</span>
+              <div>
+                <span>Have an integrated easy to access and edit meal plan</span>
+                <span>Ability to collaborate with others</span>
+              </div>
             </section>
             <section>
               <h3 class='swot-header'>T</h3>
-              <span>People needing a planing tool</span>
+              <div>
+                <span>People needing a planing tool</span>
+              </div>
             </section>
           </div>
         </article>
@@ -243,11 +261,11 @@
         <img src='images/logo-sketches.png' alt='logo drawing exploration' />
         <p>Finally, I chose the name and logo.... and gave it color</p>
         <div>
-          <img src='images/logo black.png' alt='black and white logo' />
-          <img src='images/logo-standard.png' alt='colorized logo' />
+          <img src='images/logo black.png' class='colorized_logo' alt='black and white logo' />
+          <img class='colorized_logo' src='images/logo-standard.png' alt='colorized logo' />
         </div>
         <section class='colors'>
-          <img width="305px" height="409px" src='images/colors.png' alt='color palette'/>
+          <img width="305px" height="409px" src='images/colors.png'  alt='color palette'/>
           <div>
             <p>I chose light background to give the app a sense of cleanness and order</p> 
             <p>The primary color is orange because is often represented for food and also adds some warmth and fun into the app.</p>
@@ -319,9 +337,9 @@
         <h3>From Sketches to Wireframes</h3>
         <p>With the MVP and user flows in place, I then move on to sketching.  Once I was happy with one desing, I created wireframes using Figma.</p>
         <div class='sketch-to-wireframe-images'>
-          <img src='images/iphone-sketch.png' alt='Sketch display' />
-          <img src='images/arrow-right.png' alt='arrow right' />
-          <img src='images/iphone-wire-frame-explore.png' alt='Wireframe display' />
+          <img src='images/iphone-sketch.png' class='phone-img' alt='Sketch display' />
+          <img src='images/arrow-right.png' alt='arrow right' class='arrow' />
+          <img src='images/iphone-wire-frame-explore.png' class='phone-img' alt='Wireframe display' />
         </div>
         <p>The idea here was to put togeher my desing on a timely manner so i could then test it and refind the desing</p>
         <button class='wireframe-button'><a>See Wire-frames</a></button>
@@ -330,7 +348,7 @@
         class='sectionHeader'
         data-title='Testing, Testing, Testing!'
         data-subtitle='(portotype & preference testing)' 
-        data-description='I ran prototype, mockup and preference testing to gain users’ perspective.  The feedback I got from the participants really help me shape this app mockup, and gave me great ideas for future features.'>
+        data-description="I ran prototype, mockup and preference testing to gain users' perspective.  The feedback I got from the participants really help me shape this app mockup, and gave me great ideas for future features.">
       </section>
       <article class='mockup'>
         <div 
@@ -371,7 +389,7 @@
           data-title='Preference Testing'
           data-description="Preference testing helped me decide between some visual design options.  Using User Hub, I have the participants choose their favorite desing "/>
         </div>
-        <div class='preference-image'>
+        <div class='preference-images'>
           <img src='images/iphone-opt1.png' alt='chosen design'/>
           <h4>Vs</h4>
           <img src='images/iphone-opt2.png' alt='compration design'/>
@@ -388,7 +406,7 @@
           <img width="322.04px" height="616.6px" src='images/iphone-mealplan-recipedetails.png' alt='high fidelity mockup #3' />
           <img width="322.04px" height="616.6px" src='images/iphoe-mealplan-comments.png' alt='high fidelity mockup #4' />
         </div>
-        <button><a>Review Case Study</a></button>
+        <button><a>See Mockup</a></button>
       </section>
       <article class='conclusion'>
         <div 

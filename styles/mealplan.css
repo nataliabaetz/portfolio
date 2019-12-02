@@ -436,7 +436,7 @@
   color: white;  
 }
 
-..high-fidelity .high-fidelity-images {
+.high-fidelity .high-fidelity-images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
