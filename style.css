@@ -5,11 +5,11 @@ body {
 }
 
 body:after {
-  content: '';
   background-image: url('images/macbook.jpg');
   background-size: auto 100%;
-  opacity: .5;
+  content: '';
   filter: blur(8px);
+  opacity: .5;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -1;
@@ -40,10 +40,18 @@ button a {
 .block {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  button {
+    font-size: 24px;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   button {
     border-radius: 8px;
-    font-family: Gothic A1;
     font-size: 16px;
     height: 48px;
     line-height: 20px;
@@ -57,7 +65,7 @@ button a {
   color: #20AB93;
   font-size: 24px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .fa-bars {
     display: none;
   }
@@ -85,7 +93,20 @@ button a {
   text-align: center;
   white-space: pre-wrap;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .subHeader h3 {
+    font-size: 38px;
+    margin-top: 40px;
+  }
+  .subHeader p {
+    font-size: 20px;
+    margin-top: 15px;
+    max-width: 915px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   .subHeader h3 {
     font-size: 42px;
     margin-top: 49px;
@@ -158,12 +179,11 @@ header nav.expanded ul li {
 }
 header nav.expanded ul li a {
   color: #20AB93;
-  color: white;
   font-family: Gothic A1;
   font-size: 16px;
   text-decoration: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   header nav {
     height: 82px;
     padding: 0 84px;
@@ -231,7 +251,7 @@ footer span {
   font-weight: 300;
   line-height: 14px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   footer {
     display: flex;
     height: 114px;
@@ -290,7 +310,19 @@ footer span {
   line-height: 137.9%;
   white-space: pre-line;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .sectionHeader h2 {
+    font-size: 38px;
+  }
+  .sectionHeader h6 {
+    font-size: 16px;
+  }
+  .sectionHeader .sectionP {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .sectionHeader .flexWrapper {
     flex-direction: row;
     height: 649px;
@@ -358,7 +390,7 @@ footer span {
 #index main section#hero p strong {
   font-weight: 500;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   #index main section#hero {
     height: 694px;
     text-align: left;
@@ -400,7 +432,7 @@ footer span {
   font-weight: 800;
   margin-bottom: 14px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   #index .caseStudy {
     height: 783px;
   }
@@ -427,7 +459,7 @@ footer span {
   font-weight: 600;
   padding-left: 5px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   #index #contactMe {
     font-size: 42px;
     height: 387px;
@@ -458,7 +490,18 @@ footer span {
   position: absolute;
   width: 140px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+  #mealplan #hero {
+    height: 370px;
+  }
+  #mealplan #hero button {
+    margin-left: -90px;
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 1025px) {
   #mealplan #hero {
     height: 52.2vw;
   }
@@ -533,7 +576,20 @@ footer span {
   font-weight: 300;
   margin-bottom: 26px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  #overview>div {
+    max-width: 450px;
+    padding: 50px 0;
+  }
+  #overview article {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
   #overview {
     padding: 90px;
   }
@@ -545,10 +601,15 @@ footer span {
   #overview>div {
     flex-wrap: nowrap;
     margin-top: 95px;
-    max-width: 915px;
+    max-width: 1024px;
   }
   #overview article {
     flex-basis: 33%;
+    height: 555px;
+    margin-right: 50px;
+  }
+  #overview article:last-child {
+    margin-right: 0;
   }
   #overview h3 {
     font-size: 18px;
@@ -608,7 +669,7 @@ footer span {
   content: '+';
   margin-right: 15px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   #solving-the-problem {
     padding: 90px;
   }
@@ -665,9 +726,24 @@ footer span {
   text-align: left;
   white-space: wrap;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  #survey-results li {
+    flex-basis: 50%;
+  }
+  #survey-results li span:first-child {
+    font-size: 72px;
+    margin-right: 36px;
+  }
+  #survey-results li span:last-child {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   #survey-results {
-    max-width: 915px;
+    max-width: 1024px;
+    margin: 0 auto;
   }
   #survey-results li {
     margin: 102px 0;
@@ -681,6 +757,7 @@ footer span {
     font-size: 18px;
   }
 }
+
 #personas {
   align-items: top;
   display: flex;
@@ -713,7 +790,19 @@ footer span {
   line-height: 22px;
   margin-top: 30px;
 }
-@media only screen and (min-width: 768px) {
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  #personas {
+    flex-direction: row;
+  }
+  #personas li:nth-child(2) {
+    border: 1px solid black;
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
   #personas {
     flex-direction: row;
     margin: 90px auto;
@@ -785,7 +874,17 @@ footer span {
   font-weight: 900;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .competitor section {
+    flex: 1 0 50%;
+    flex-direction: column;
+  }
+  .competitor div span{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .competitor {
     margin: 0 auto;
     max-width: 915px;
@@ -822,7 +921,7 @@ footer span {
   margin: 23px;
 }
 .branding p {
-  display: inline-block;
+  display: block;
   font-family: Gothic A1;
   font-size: 18px;
   font-weight: 300;
@@ -838,7 +937,7 @@ footer span {
   height: 136px;
   width: 199px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .branding .feelings {
     font-family: Raleway;
     font-size: 32px;
@@ -858,14 +957,41 @@ footer span {
   flex-direction: row;
   justify-content: space-between;
   margin: 40px auto;
+  align-items: stretch;
 }
-.colors img {
-  flex-basis: 40%;
+.colors .palette {
+  flex-basis: 30%;
   padding: 10px;
+  display: flex;
+  align-items: stretch;
+
+  flex-direction: column;
 }
+
+.colors .palette ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.colors .palette li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+  flex-basis: 33%;
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 24px 4px;
+}
+
+
 .colors div {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 70%;
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
@@ -876,9 +1002,16 @@ footer span {
   font-weight: 300;
   line-height: 131%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
+  .finally {
+    margin: 107px 0;
+  }
   .colors {
-    max-width: 915px;
+    max-width: 1024px;
+    margin: 200px auto;
+  }
+  .colors .palette {
+    height: 409px;
   }
   .colors div {
     flex-basis: 420px;
@@ -900,10 +1033,11 @@ footer span {
   margin-bottom: 25px;
   margin-top: 15px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .information h4 {
     font-size: 42px;
-    line-height: 525px;
+    margin-top: 50px;
+    line-height: 55px;
   }
 }
 .gray_box_lists {
@@ -932,9 +1066,22 @@ footer span {
   line-height: 137.9%;
   margin-top: 30px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .gray_box_lists section {
+    margin: 0 auto;
+    width: 50%;
+
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   .gray_box_lists {
+    flex-direction: row;
     max-width: 1270px;
+  }
+  .gray_box_lists li {
+    margin-top: 70px;
   }
 }
 .content-strategy-image {
@@ -967,8 +1114,8 @@ footer span {
   margin-bottom: 30px;
 }
 .sketch-to-wireframe-images .phone-img {
-  height: 481.5px;
   width: 257px;
+  height: 482px;
 }
 .sketch-to-wireframe-images .arrow {
   margin: 20px 0;
@@ -982,18 +1129,39 @@ footer span {
   margin-bottom: 50px;
   padding: 0 20px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .sketch-to-wireframe-images {
+    flex-direction: row;
+  }
+  .sketch-to-wireframe-images .arrow {
+    margin: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   .sketch-to-wireframe h3 {
     font-size: 42px;
     line-height: 50px;
     margin: 160px auto 40px;
   }
+  .content-strategy-image {
+    width: 1024px;
+    height: 418px;
+    margin: 0 auto;
+  }
+  .user-flow-image {
+    width: 1024px;
+    height: 650px;
+    margin: 104px auto 48px;
+  }
   .sketch-to-wireframe-images {
     flex-direction: row;
   }
   .sketch-to-wireframe-images .phone-img {
-    height: initial;
-    width: initial;
+    width: 319.76px;
+    height: 599.71px;
   }
   .sketch-to-wireframe-images .arrow {
     margin: 0;
@@ -1006,7 +1174,7 @@ footer span {
 .wireframe-button {
   margin-bottom: 40px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .wireframe-button {
     margin-bottom: 170px;
   }
@@ -1020,7 +1188,7 @@ footer span {
   margin-top: 20px;
   width: 90vw;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .mockup img {
     height: initial;
     width: initial;
@@ -1033,16 +1201,23 @@ footer span {
   margin: 15px;
   max-width: 500px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .testing.gray_box_lists section {
+    margin: 15px auto;
+  }
+}
 .preference-images {
   align-items: center;
-  display: column;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 .preference-images img {
-  height: 459.1px;
-  width: 257px;
+  width: 192px;
+  height: 332.33px;
 }
 .preference-images h4 {
   font-family: Raleway;
@@ -1051,9 +1226,19 @@ footer span {
   font-weight: 800;
   line-height: 57px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
   .preference-images {
+    margin: 50px 0 75px;
     flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .preference-images {
+    margin: 100px 0 150px;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .high-fidelity {
@@ -1093,7 +1278,14 @@ footer span {
   height: 160px;
   width: 83px;
 }
-@media only screen and (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .high-fidelity .high-fidelity-images img {
+    width: 172px;
+    height: 314.33px;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .high-fidelity {
     background-image: url('images/HighFidelityBackground.jpg');
     background-size: cover;
@@ -1122,6 +1314,10 @@ footer span {
   .high-fidelity .high-fidelity-images {
     flex-direction: row;
   }
+  .high-fidelity .high-fidelity-images img {
+    width: 322.04px;
+    height: 616.6px;
+  }
 }
 .conclusion {
   margin-bottom: 10px;
@@ -1129,4 +1325,118 @@ footer span {
 }
 .conclusion .subHeader p {
   text-align: left;
+}
+
+/* About page */
+
+main.about {
+  padding: 0 15px;
+  text-align: center;
+}
+
+
+.about_img_container img {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+
+.bio p {
+  text-align: left;
+  padding: 0px;
+  font-family: Gothic A1;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 167.23%;
+}
+
+#fun_facts {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#fun_facts h2 { 
+  font-family: Fira Sans;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #20AB93;
+  margin-top: 17px;
+}
+
+#fun_facts ul li { 
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 171.23%;
+  margin-top: 17px;
+}
+#fun_facts ul li::first-letter {
+  color: #20AB93;
+  font-weight: 500;
+}
+
+.about button {
+  margin-top: 40px;
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+  main.about {
+    padding: 0 90px;
+    margin: 0 auto;
+  }
+
+  .about_img_container {
+    background-image: url('images/bio-pic.jpg');
+    background-size: cover;
+    background-position: 75% 100%;
+    transform: translateX(90px);
+  }
+
+  .about_img_container img {
+    display: none;
+  }
+
+  .subHeader.bio h3 { 
+    font-family: Fira Sans;
+    font-weight: 800;
+    font-size: 35px;
+    color: #20AB93;
+    margin-top: 75px;
+  }
+
+  .subHeader.bio p {
+    font-size: 18px;
+    max-width: initial;  
+  }
+
+  .about_section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .bio {
+    flex-basis: 50%;
+  }
+  
+  #fun_facts h2 { 
+    font-size: 35px;
+    margin-top: 75px;
+  }
+
+  #fun_facts ul li { 
+    font-size: 20px;
+    margin-top: 27px;
+  }
+
+  .about_img_container {
+    margin: 0;
+    flex-basis: 50%;
+  }
+
+  .about button {
+    margin-top: 95px;
+    margin-bottom: 50px;
+  }
 }

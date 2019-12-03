@@ -35,6 +35,13 @@ $(function(){
     $.get("subHeader.html", function( loaded ) {
       sectionHeaders.each((index, section) => {
         template = $(loaded)
+
+        $.each( $(section).prop("attributes"), function() {
+          if(!this.name.startsWith('data')){
+            template.attr(this.name, this.value);
+          }
+        });
+
         template.find('h3').text($(section).data('title'))
         template.find('p').text($(section).data('description'))
         $(section).replaceWith(template)
