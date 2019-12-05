@@ -136,7 +136,7 @@ header nav.expanded ul {
   display: block;
 }
 header nav.expanded ul {
-  background-color: #F3E6E6;
+  background-color: white;
   border: 1px solid #D8C29C;
   padding: 14px;
   position: absolute;
@@ -146,7 +146,7 @@ header nav.expanded ul {
 }
 header nav.expanded ul:after {
   border: 11px solid transparent;
-  border-bottom-color: #F3E6E6;
+  border-bottom-color: white;
   border-top: 0;
   content: '';
   height: 0;
@@ -771,13 +771,13 @@ footer span {
   text-align: center;
 }
 #personas h5 {
-  font-family: Open Sans;
+  font-family: Gothic A1;
   font-size: 18px;
   font-weight: bold;
   margin: 10px;
 }
 #personas span {
-  font-family: Open Sans;
+  font-family: Gothic A1;
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
@@ -964,7 +964,6 @@ footer span {
   padding: 10px;
   display: flex;
   align-items: stretch;
-
   flex-direction: column;
 }
 
@@ -997,6 +996,7 @@ footer span {
   text-align: left;
 }
 .colors p {
+  flex-basis: 33%;
   font-family: Gothic A1;
   font-size: 18px;
   font-weight: 300;
