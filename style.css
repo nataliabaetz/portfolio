@@ -216,7 +216,7 @@ header nav.expanded ul li a {
 footer {
   align-items: center;
   height: 78px;
-  padding: 40px 0px 14px;
+  padding: 0px 0px 14px;
   position: relative;
   text-align: center;
 }
@@ -320,6 +320,7 @@ footer span {
   }
   .sectionHeader .sectionP {
     font-size: 20px;
+    padding: 0 50px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -418,7 +419,7 @@ footer span {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 190px;
+  height: 40vw;
   justify-content: center;
 }
 #index .caseStudy#mealPlan {
@@ -477,7 +478,7 @@ footer span {
 #mealplan #hero {
   background-image: url('images/hero-bg.jpg');
   background-size: cover;
-  height: 232px;
+  height: 50vw;
   position: relative;
   text-align: center;
 }
@@ -494,7 +495,7 @@ footer span {
 @media (min-width: 768px) and (max-width: 1024px)  {
 
   #mealplan #hero {
-    height: 370px;
+    height: 50vw;
   }
   #mealplan #hero button {
     margin-left: -90px;
@@ -1315,8 +1316,8 @@ footer span {
     flex-direction: row;
   }
   .high-fidelity .high-fidelity-images img {
-    width: 322.04px;
-    height: 616.6px;
+    width: 20vw;
+    height: 38.2vw;
   }
 }
 .conclusion {
